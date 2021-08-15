@@ -5,7 +5,7 @@ const Users =(sequelize, DataTypes)=>sequelize.define('users', {
     username: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true // CONSTRAINT
+        // unique: true // CONSTRAINT
     },
     password: {
         type: DataTypes.STRING,
