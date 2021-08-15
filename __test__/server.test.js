@@ -38,7 +38,7 @@ describe('my API Server', ()=> {
     });
 
     let obj={
-        username:'ahmad11',
+        username:'ahmadn',
         password:'test123'
     }
 
@@ -53,9 +53,9 @@ describe('my API Server', ()=> {
     it('Create a record using POST signin ', async () => {
         // let test=base64.encoded('ahmad01:test123')
        
-        const response = await request.post('/signin').set('Authorization', `Basic YWhtYWQxMTp0ZXN0MTIz`); // async
+        const response = await request.post('/signin').set('Authorization', `Basic YWhtYWRuOnRlc3QxMjM=`); // async
         expect(response.status).toEqual(200);
-    expect(response.body.username).toBe('ahmad11');
+    expect(response.body.username).toBe('ahmadn');
       
     
     });
